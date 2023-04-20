@@ -20,7 +20,7 @@ var createNewTaskElement=function(taskString){
     var listItem=document.createElement("li");
 
     //input (checkbox)
-    var checkBox=document.createElement("input");//checkbx
+    var checkBox=document.createElement("input");//checkbox
     //label
     var label=document.createElement("label");//label
     //input (text)
@@ -89,7 +89,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".edit");
-    var containsClass=listItem.classList.contains("edit-Mode");
+    var containsClass=listItem.classList.contains("edit-mode");
     //If class of the parent is .edit-mode
     if(containsClass){
 
@@ -103,7 +103,7 @@ var editTask=function(){
     }
 
     //toggle .edit-mode on the parent.
-    listItem.classList.toggle("edit-Mode");
+    listItem.classList.toggle("edit-mode");
 };
 
 
@@ -176,7 +176,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //for each list item
 for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
-    //bind events to list items chldren(tasksCompleted)
+    //bind events to list items children(tasksCompleted)
     bindTaskEvents(incompleteTaskHolder.children[i],taskCompleted);
 }
 
@@ -185,7 +185,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
-    //bind events to list items chldren(tasksIncompleted)
+    //bind events to list items children(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
 

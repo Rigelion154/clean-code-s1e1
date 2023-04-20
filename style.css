@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.header .more-inf {
+.header .header__link {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-task__wrapper {
   display: flex;
 }
 
@@ -75,7 +75,7 @@ button{
 
 /* Heading */
 .section__title,
-.label__new-task {
+.add-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -86,7 +86,7 @@ button{
 }
 
 .input__text,
-.input__text-add {
+.add-task__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -104,12 +104,12 @@ button{
 }
 
 /* New Task */
-.label__new-task {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
 
-.input__text-add {
+.add-task__input {
   width: 318px;
 }
 
@@ -163,11 +163,11 @@ button{
   display: none;
 }
 
-.edit-Mode .input__text {
+.edit-mode .input__text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-Mode .task__label {
+.edit-mode .task__label {
   display: none;
 }
