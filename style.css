@@ -49,11 +49,13 @@ ul {
   padding: 0px;
 }
 
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -83,7 +85,8 @@ input,button{
   text-transform: uppercase;
 }
 
-.input__text, .input__text-add {
+.input__text,
+.input__text-add {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
